@@ -1,0 +1,35 @@
+<odoo>
+  <record id="view_form_equipe" model="ir.ui.view">
+    <field name="name">Equipe form</field>
+    <field name="model">football.equipe</field>
+    <field name="arch" type="xml">
+      <form string="equipe">
+        <group>
+          <field name="nom_club"/>
+          <field name="thumbnail" widget="image" options='{"size": [150, 140]}' />
+          <field name="ligue_des_champions" />
+          <field name="fondation" />
+          <field name="maillots" />
+        </group>
+      </form>
+    </field>
+  </record>
+  
+
+    <record id="view_list_equipe" model="ir.ui.view">
+        <field name="name">Equipe list</field>
+        <field name="model">football.equipe</field>
+        <field name="arch" type="xml">
+            <list>
+              <field name="nom_club"/>
+              <field name="thumbnail" widget="image" options='{"size": [150, 140]}' />
+              <field name="ligue_des_champions" />
+              <field name="fondation" />
+              <field name="maillots" />
+              <field name="joueur_ids" />
+            </list>
+        </field>
+    </record>
+
+
+</odoo>

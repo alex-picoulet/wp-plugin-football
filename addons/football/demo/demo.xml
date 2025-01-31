@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<odoo noupdate="1">
+    <data>
+        <record id="football_equipe_psg" model="football.equipe">
+            <field name="nom_club">Paris Saint-Germain</field>
+            <field name="ligue_des_champions">0</field>
+            <field name="fondation">1970-08-12</field>
+            <field name="maillots">domicile</field>
+            <field name="thumbnail" type="base64" file="football/static/photos/paris.jpg"/>          
+        </record>
+
+        <record id="football_equipe_alnassr" model="football.equipe">
+            <field name="nom_club">Al-Nassr</field>
+            <field name="ligue_des_champions">0</field>
+            <field name="fondation">1955-10-24</field>
+            <field name="maillots">exterieur</field>
+            <field name="thumbnail" type="base64" file="football/static/photos/alnassr.png"/>          
+        </record>
+
+        <record id="football_equipe_real_madrid" model="football.equipe">
+            <field name="nom_club">Real Madrid</field>
+            <field name="ligue_des_champions">14</field>
+            <field name="fondation">1902-03-06</field>
+            <field name="maillots">third</field>
+            <field name="thumbnail" type="base64" file="football/static/photos/real.png"/>          
+        </record>
+
+        <record id="football_equipe_bayern" model="football.equipe">
+            <field name="nom_club">Bayern Munich</field>
+            <field name="ligue_des_champions">6</field>
+            <field name="fondation">1900-02-27</field>
+            <field name="maillots">domicile</field>
+            <field name="thumbnail" type="base64" file="football/static/photos/bayern.png"/>          
+        </record>
+
+        <record id="football_equipe_manchester_city" model="football.equipe">
+            <field name="nom_club">Manchester City</field>
+            <field name="ligue_des_champions">1</field>
+            <field name="fondation">1880-11-13</field>
+            <field name="maillots">domicile</field>
+            <field name="thumbnail" type="base64" file="football/static/photos/mancity.png"/>          
+        </record>
+
+        <record id="joueur_1" model="football.joueur">
+            <field name="nom_complet">Lionel Messi</field>
+            <field name="age">36</field>
+            <field name="fin_contrat">2025-06-30</field>
+            <field name="poste">attaquant</field>
+            <field name="equipe_id" ref="football_equipe_psg"/>
+            <field name="thumbnail" type="base64" file="football/static/photos/messi.png"/>
+        </record>
+
+        <record id="joueur_2" model="football.joueur">
+            <field name="nom_complet">Cristiano Ronaldo</field>
+            <field name="age">39</field>
+            <field name="fin_contrat">2024-12-31</field>
+            <field name="poste">attaquant</field>
+            <field name="equipe_id" ref="football_equipe_alnassr"/>
+            <field name="thumbnail" type="base64" file="football/static/photos/ronaldo.png"/>
+        </record>
+
+        <record id="joueur_3" model="football.joueur">
+            <field name="nom_complet">Kylian Mbappé</field>
+            <field name="age">25</field>
+            <field name="fin_contrat">2024-06-30</field>
+            <field name="poste">attaquant</field>
+            <field name="equipe_id" ref="football_equipe_psg"/>
+            <field name="thumbnail" type="base64" file="football/static/photos/mbappe.jpg"/>
+        </record>
+
+        <record id="joueur_4" model="football.joueur">
+            <field name="nom_complet">Robert Lewandowski</field>
+            <field name="age">34</field>
+            <field name="fin_contrat">2026-06-30</field>
+            <field name="poste">attaquant</field>
+            <field name="equipe_id" ref="football_equipe_bayern"/>
+            <field name="thumbnail" type="base64" file="football/static/photos/lewandowski.png"/>
+        </record>
+
+        <record id="joueur_5" model="football.joueur">
+            <field name="nom_complet">Erling Haaland</field>
+            <field name="age">23</field>
+            <field name="fin_contrat">2027-06-30</field>
+            <field name="poste">attaquant</field>
+            <field name="equipe_id" ref="football_equipe_manchester_city"/>
+            <field name="thumbnail" type="base64" file="football/static/photos/haaland.jpg"/>
+        </record>
+    </data>
+</odoo>

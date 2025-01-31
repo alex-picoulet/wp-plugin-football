@@ -1,0 +1,22 @@
+<odoo>
+    <!-- Menu de l'application rentacar -->
+    <menuitem id="menu_football" name="Football" />
+
+    <!-- Action pour ouvrir la liste des joueurs -->
+    <record id="action_football_joueur" model="ir.actions.act_window">
+        <field name="name">Football Joueurs</field>
+        <field name="res_model">football.joueur</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- Action pour ouvrir la liste des equipes -->
+    <record id="action_football_equipe" model="ir.actions.act_window">
+        <field name="name">Football Equipes</field>
+        <field name="res_model">football.equipe</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- Lien de menu qui utilise l'action qui affiche la liste des véhicules -->
+    <menuitem id="menu_football_joueur" name="Joueur" parent="menu_football" action="action_football_joueur" sequence="10"  />
+    <menuitem id="menu_football_equipe" name="Equipe" parent="menu_football" action="action_football_equipe" sequence="20"  />
+</odoo>

@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_equipe_manager,EquipeManager,model_football_equipe,football_group_manager,1,1,1,1
+access_equipe_user,EquipeManager,model_football_equipe,football_group_user,1,0,0,0
+access_joueur_manager,JoueurManager,model_football_joueur,football_group_manager,1,1,1,1
+access_joueur_user,JoueurManager,model_football_joueur,football_group_user,1,0,0,0
+
+

@@ -1,0 +1,75 @@
+.OdooBridge {
+    max-width: 100% !important;
+}
+
+
+.OdooBridge h2 {
+    text-align: center;
+}
+
+
+.OdooBridge.OdooBridgeBack label,
+.OdooBridge.OdooBridgeBack input {
+    display: inline-block;
+    width: 300px;
+    margin: 5px;
+}
+
+
+.OdooBridge .liste {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    font-size: 0.8em;
+}
+
+
+.OdooBridge .liste .cardContent {
+    align-self: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    box-shadow: 5px 5px 5px #c0c0c0;
+    border-radius: 5px;
+    background-color: #EEF3F9;
+}
+
+
+.OdooBridge .liste .thumb {
+    width: 100%;
+    height: 200px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+
+.OdooBridge .liste input[type="submit"] {
+    font-weight: normal;
+    background-color: rgb(54, 40, 144);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    height: 40px;
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.OdooBridge .liste .model {
+    font-weight: bold;
+    padding: 10px;
+}
+.OdooBridge .liste .date {
+    font-weight: normal;
+    padding: 10px;
+}
+.OdooBridge .liste .immat {
+    font-weight: normal;
+    padding: 10px;
+}
+.OdooBridge .liste .state {
+    font-weight: normal;
+    padding: 10px;
+}
